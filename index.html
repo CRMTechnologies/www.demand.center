@@ -477,45 +477,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+        <script src="shared.js"></script>
         <script type="text/javascript">
-        	$(document).ready(function(){
-        		$(window).on("scroll", function() {
-    		        if($(window).scrollTop() > 100) {
-    		            $(".fixed-nav").css({"background-color":"#6300ff"});
-						//$(".navbar-brand").css({"visibility":"visible"});
-    		        } else {
-    		            $(".fixed-nav").css({"background-color":"transparent"});
-						//$(".navbar-brand").css({"visibility":"hidden"});					
-    		        }
-    		    });
-				$('.navbar-collapse ul li a').click(function(){ 
-					$('.navbar-toggle:visible').click();
-				});				
-				$('a[data-toggle="tab"]').on('shown.bs.tab', function(event) {
-				  $('.pad-mob-feat a.active').removeClass('active');
-				  $(event.target).addClass('active');
-           
-            if($(window).width() < 768){
-              $(".navbar-nav li a").click(function(){
-                  $("#navbar").removeClass("collapse in");
-              });
+        	$(document).ready(function(){				
+			if($(window).width() < 768){
+				$(".navbar-nav li a").click(function(){
+					$("#navbar").removeClass("collapse in");
+				});
 
-              var panel = $(".tab-content").find('.active');
-                $('html,body').animate({
-                  scrollTop: $(panel).offset().top -110
-                }, 500);
-              }
-				    });
+				var panel = $(".tab-content").find('.active');
+				$('html,body').animate({
+					scrollTop: $(panel).offset().top -110
+				}, 500);
+			}				
         	});
-
-			/*(function(j,u,k,e,b,o,x){j[b]=j[b]||function(){
-			(j[b].q=j[b].q||[]).push(arguments)},j[b].l=1*new Date();o=u.createElement(k),
-			x=u.getElementsByTagName(k)[0];o.async=1;o.src=e;x.parentNode.insertBefore(o,x)
-			})(window,document,'script','https://app.cdn.lookbookhq.com/production/jukebox/current/jukebox.js','lbhq');
-			  lbhq('create', 'LB-7718F031-10354');*/
-      
-		</script>	
+        </script>	
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MQ3TH57"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
