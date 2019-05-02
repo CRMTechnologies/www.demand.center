@@ -28,13 +28,13 @@ $.fn.euCookieLawPopup = (function() {
 	///////////////////////////////////////////////////////////////////////////////////////////////
 	// PARAMETERS (MODIFY THIS PART) //////////////////////////////////////////////////////////////
 	_self.params = {
-		cookiePolicyUrl : '/?cookie-policy',
+		cookiePolicyUrl : 'https://www.crmtechnologies.com/content/privacy-policy',
 		popupPosition : 'top',
 		colorStyle : 'default',
 		compactStyle : false,
-		popupTitle : 'This website is using cookies',
-		popupText : 'We use cookies to ensure that we give you the best experience on our website. If you continue without changing your settings, we\'ll assume that you are happy to receive all cookies on this website.',
-		buttonContinueTitle : 'Continue',
+		popupTitle : 'This website uses cookies',
+		popupText : 'We use cookies to enhance your user experience. By clicking any link on this page you are giving your consent for us to set cookies.',
+		buttonContinueTitle : 'OK, I Agree',
 		buttonLearnmoreTitle : 'Learn&nbsp;more',
 		buttonLearnmoreOpenInNewWindow : true,
 		agreementExpiresInDays : 30,
