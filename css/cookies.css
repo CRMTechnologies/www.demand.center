@@ -6,7 +6,6 @@
 	background-color: rgb(99, 0, 255);
 	color: #fff;
 	padding: 5px 20px;
-	font-size: 12px;
 	line-height: 1.2em;
 	text-align: center;
 	display: none;
@@ -81,7 +80,6 @@
 .eupopup-button_1 {
 	color: #fff;
 	font-weight: bold;
-	font-size: 14px;
   border: 1px solid #fff;
   border-radius: 10px;
 }
@@ -89,7 +87,6 @@
 .eupopup-button_2 {
 	color: #fff;
 	font-weight: normal;
-	font-size: 12px;
 }
 
 .eupopup-button {
