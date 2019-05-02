@@ -35,7 +35,7 @@ $.fn.euCookieLawPopup = (function() {
 		popupTitle : 'This website uses cookies',
 		popupText : 'We use cookies to enhance your user experience. By clicking any link on this page you are giving your consent for us to set cookies.',
 		buttonContinueTitle : 'OK, I Agree',
-		buttonLearnmoreTitle : 'Learn&nbsp;more',
+		buttonLearnmoreTitle : 'More Information',
 		buttonLearnmoreOpenInNewWindow : true,
 		agreementExpiresInDays : 30,
 		autoAcceptCookiePolicy : false,
