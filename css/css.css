@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: FuturaBook;
-    src: url('font/Futura Book font.ttf');
+    src: url('/font/Futura Book font.ttf');
 }
 body {
 	font-family: FuturaBook, 'Nunito', sans-serif;
