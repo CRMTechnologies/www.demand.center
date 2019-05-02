@@ -18,7 +18,7 @@ a { outline: none; }
     padding-bottom: 50px;
 }
 .wrapper {
-	background-image: url("images/iStock-861164910_transparent.jpg");
+	background-image: url("/images/iStock-861164910_transparent.jpg");
 	background-size:cover;
 	background-repeat: no-repeat;
     background-position: center;
