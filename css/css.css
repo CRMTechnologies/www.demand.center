@@ -393,16 +393,19 @@ color:whitesmoke;
 	margin-top: -82px;
 	display: inline-block;
 }
-.logo-smart > div {
+.logo-smart div {
 	-ms-flex-align: center!important;
 	align-items: center!important;
 	display: -ms-flexbox!important;
-	display: flex!important;	
+	display: flex!important;
+	width: 100%;	
 }
 .logo-smart {	
 	display: -ms-flexbox!important;
 	display: flex!important;
+	width: 100%;
 }
+.logo-smart.logo-carousel img { max-height: 75px; width: auto;}
 .logo-smart + .logo-smart { margin-bottom: 0px; }
 .challenges-container > .container > .text-b { margin-top: 10px; }
 
