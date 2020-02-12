@@ -498,19 +498,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <script src="/js/shared.js"></script>
         <script src="/js/cookies.js"></script>	
         <script type="text/javascript">
-        	$(document).ready(function(){				
-			if($(window).width() < 768){
-				$(".navbar-nav li a").click(function(){
-					$("#navbar").removeClass("collapse in");
-				});
-
+        $(document).ready(function(){				
+		if($(window).width() < 768){
+			$(".navbar-nav li a").click(function(){
+				$("#navbar").removeClass("collapse in");
+			});
+			$(".features-container .pad-mob-feat a").click(function(){
 				var panel = $(".tab-content").find('.active');
 				$('html,body').animate({
 					scrollTop: $(panel).offset().top -110
 				}, 500);
-			}				
-        	});
-        </script>	
+			});
+		}
+        });
+        </script>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MQ3TH57"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
