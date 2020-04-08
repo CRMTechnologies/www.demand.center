@@ -106,8 +106,9 @@ a { outline: none;  }
 /*Section Marketing Challenges*/
 .text-b {
     color: #6300ff;
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 50px;
+    font-family: proxima-nova;
 }
 .blue .text-b { color: #fff;margin-top: 30px;}
 .text-e { font-size: 29px;margin-top: 10px;font-family: futura-pt;}
@@ -147,6 +148,7 @@ a { outline: none;  }
 }
 .full-width-panels h3{
 	padding-bottom:30px;
+	font-size: 29px;
 }
 .full-width-panels img{
 	max-width: 100%;
@@ -173,9 +175,9 @@ a { outline: none;  }
 }
 
 .challenges {
-    font-size: 22px;
-	font-family: futura-pt;
-	font-weight: 400;
+    font-size: 19px;
+    font-family: proxima-nova;
+    font-weight: 400;
 }
 .text-feature {
 	width: 280px;
@@ -196,7 +198,9 @@ a { outline: none;  }
 .border-price {
 	border: 1px solid #000000;
 	padding: 20px;
+	font-family: proxima-nova;
 }	
+.border-price b, .border-price strong, .price-opt b { font-weight: 600; }
 .border-price i {
 	padding-right: 3px;
 }
@@ -205,13 +209,14 @@ a { outline: none;  }
 	font-family: futura-pt;
 }
 .text-price {
-	font-size: 20px;
+	font-size: 17px;
+	font-family: proxima-nova;
 }
 .price-opt {
 	font-size: 22px;
 	text-transform: uppercase;
 	color: #6300ff;
-	font-weight: bold;
+	font-weight: 600;
 }
 .dollar {
 	font-size: 20px;
@@ -288,7 +293,8 @@ hr.spacer {
 	font-family: futura-pt;
 }
 .text-integration {
-	font-size: 20px;
+	font-size: 17px;
+	font-family: proxima-nova;
 }
 .imagelogo {
 	width: 170px;
@@ -320,7 +326,7 @@ hr.spacer {
 }
 .quote-text {
 	font-size: 24px;
-	font-family: futura-pt;		
+	font-family: futura-pt;
 }
 .size {
 	width: 150px;
@@ -405,10 +411,11 @@ a:active, a:focus {
 }
 .green .lb-inpage-item { background: transparent; }
 .lb-inpage-item-text {
-	font-size: 19px;
+	font-size: 17px;
 	font-weight: 400;
 	color: #333;
 	padding: 15px 5px;
+	font-family: proxima-nova;
 }	
 /* Footer */
 .footer {
