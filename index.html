@@ -29,10 +29,14 @@
     <!-- Custom CSS -->
     <link href="/css/css.css" rel="stylesheet">
     <link href="/css/cookies.css" rel="stylesheet">
+      
+    <!-- SLICK CSS -->
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
 	  
     <!--  Font awesome icons-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    
+	<link rel="stylesheet" href="https://use.typekit.net/bzq4mjz.css">    
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -62,10 +66,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <ul class="nav navbar-nav">
                   <li class="active"><a href="#solution">Solution</a></li>
                   <li><a href="#features">Features</a></li>
-                  <li><a href="#editions">Editions</a></li>
+                  <li><a href="#benefits">Use Cases</a></li>				  
+                  <li><a href="/pricing.html">Editions</a></li>
                   <!--li><a href="#">Video</a></li-->
-                  <li><a href="#resources">Resources</a></li>
-                  <li><a href="login.html">Log In</a></li>
+                  <li><a href="/resources.html">Resources</a></li>
+                  <li class="d-dt"><a href="/login.html">Log In</a></li>
                   <li><a class="lasta" href="/request-a-demo.html">Request A Demo</a></li>
                 </ul>
                 </div><!--/.nav-collapse -->
@@ -80,17 +85,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <section class="">
           <div class="jumbotron jumbo" >
             <div class="container text-center"><img src="images/Demand-Center-White.png" width="750" alt="..." class="img-mob">
-				<p class="global">Intelligent Global Campaign Orchestration</p>
-              <p><a class="btn btn-primary btn-lg text-uppercase button-a" href="/request-a-demo.html" role="button">Request A Demo</a></p>
+				<p class="global">Meet the first purpose built platform to support demand marketing at scale</p>
+              <p><a class="btn btn-primary btn-lg text-uppercase button-a button-t" href="#video" role="button">Watch the Video</a> <a class="btn btn-primary btn-lg text-uppercase button-a" href="/request-a-demo.html" role="button">Request A Demo</a></p>
             </div>
           </div>
         </section>
         <!--Jumbotron -->
     </section>
-	
+
+		
         <!--Section Marketing Challenges-->
 		<a name="solution"></a>			
-        <section class="text-center margintopbot challenges-container">
+        <section class="text-center margintop challenges-container">
           <div class="container">
             	<p class="text-a">Global Marketing at Scale - The CMO Challenges</p>
 			  	<div class="container text-center">
@@ -102,59 +108,54 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             		</div>
           		</div>
 			  
-            	<p class="text-b text-left">The Demand.Center platform brings structure, efficiency and scale to centralized marketing campaign production while embracing the needs of field marketers. Rapidly improving the quality, consistency and speed-to-market for your campaigns the world over - driving closer collaboration and alignment between your central and field marketing teams.</p>  	
           </div>
         </section>
         <!--Section 1-->
         <!-- SECTION 2 -->
-
- 
+		<a name="video"></a>		
+        <section class="blue margintopbot challenges-container"> 
+          <div class="container">
+				<div class="row">	
+					<div class="col-md-5">
+						<p class="text-e">Intelligent Global Campaign Orchestration</p>					
+						<p class="text-b">The Demand.Center platform brings structure, efficiency and scale to centralized marketing campaign production while embracing the needs of field marketers. Rapidly improving the quality, consistency and speed-to-market for your campaigns the world over - driving closer collaboration and alignment between your central and field marketing teams.</p>  						
+					</div>
+					<div class="col-md-7">
+						<div class="embed-responsive embed-responsive-16by9">
+							<video poster="images/explainer-poster.jpg" controls>
+							  <source src="video/demand_center_explainer.mp4" type="video/mp4">
+							</video>
+							
+						</div>
+					</div>					
+				</div>
+			</div>
+        </section> 
         <!-- Section 2 end -->
 
-        <!-- Section Customers -->
-        <section class="blue text-center">
-			<div class="container">
-              <div class="row logo-smart">
-			  
-                <div class="col-md-3 col-md-push-1">
-                  <img class="img-responsive" src="images/Aruba-logo-wht.png" width="150">
-                </div>
-		<!--div class="col-md-3">
-                  <img class="img-responsive" src="images/equinix.gif" width="150">
-                </div-->  
-                <div class="col-md-3 col-md-push-1">
-                   <img class="img-responsive" src="images/Bb_Signature_RevMed_tcm223-65543.png" width="250">
-                </div>
-                <div class="col-md-3 col-md-push-1">
-                   <img class="img-responsive" src="images/mcafee-logo.png" width="225">
-                </div>
-              
-              </div>
-			</div>  
-        </section>
-        <!-- Section Customers -->
+
 		
         <!-- Section Features-->
 		<a name="features"></a>		
-        <section class="features-container">
+        <section class="features-container noSelect">
           <div class="container text-center">
             <p class="text-a">Align, Build, Execute and Scale around a common platform</p>
-            <div class="row">
-              <div class="col-md-2 col-xs-6 pad-mob-feat">
+            <div class="row slider-nav">
+              <div class="col-md-2 col-xs-6 pad-mob-feat noSelect">
                 <a href="#campaignOrchestration" aria-controls="campaignOrchestration" role="tab" data-toggle="tab" class="active">
-                  <img src="images/icon-CampOrc-T.png" alt="..." class="img-circle">
-                  <img src="images/icon-CampOrc-C.png" alt="..." class="img-circle on-hover">				  
+                  <img src="images/icon-CampOrc-T.png" alt="..." class="img-circle noSelect">
+                  <img src="images/icon-CampOrc-C.png" alt="..." class="img-circle on-hover noSelect">				  
                   <h3 class="challenges">Campaign Orchestration</h3>
                 </a>
               </div>
-              <div class="col-md-2 col-xs-6 pad-mob-feat">
+              <div class="col-md-2 col-xs-6 pad-mob-feat noSelect">
                 <a href="#campaignUnified" aria-controls="campaignUnified" role="tab" data-toggle="tab">
                   <img src="images/icon-camt-t.png" alt="..." class="img-circle">
                   <img src="images/icon-camt-c.png" alt="..." class="img-circle on-hover">
                   <h3 class="challenges">Unified Campaign Taxonomy</h3>
                 </a>
               </div>
-              <div class="col-md-2 col-xs-6 pad-mob-feat">
+              <div class="col-md-2 col-xs-6 pad-mob-feat noSelect">
                  <a href="#campaignCollaboration" aria-controls="campaignCollaboration" role="tab" data-toggle="tab">
                   <img src="images/icon-coll-t.png" alt="..." class="img-circle">
                   <img src="images/icon-coll-c.png" alt="..." class="img-circle on-hover">
@@ -190,7 +191,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <div class="full-width-panels green">
             <div class="container">
               <!-- Tab panes -->
-              <div class="tab-content">
+              <div class="slider-for tab-content">
                 <div role="tabpanel" class="tab-pane active" id="campaignOrchestration">
 					<div class="col-md-5">
 						<h3>Campaign Orchestration</h3>
@@ -206,7 +207,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 						<p class="challenges">Maintains, controls and distributes a hierarchical campaign structure and tracking mechanism to downstream systems enabling consistent roll-up reporting of campaign performance aligned to your go-to-market program themes.</p>
 					</div>
 					<div class="col-md-7">
-						<img src="images/DC-Taxonomy.PNG" alt="Demand Center - Unified Campaign Taxonomy" />
+						<img src="images/DC-Taxonomy.png" alt="Demand Center - Unified Campaign Taxonomy" />
 					</div>						
                 </div>
                 <div role="tabpanel" class="tab-pane" id="campaignCollaboration">
@@ -250,24 +251,51 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </div>
           </div><!--  Full Width Panels end-->
         </section>
-        <!-- Section Features-->		
-
-        
-
-
+        <!-- Section Features-->	
 		
-		<a name="editions"></a>
-        <section class="price text-center">
+ 		<a name="benefits"></a>
+        <section class="price">
           <div class="container">
           	<div class="row">
           		<div class="pricing text-center pricing-text">
-          			<p class="text-d">Editions</p>
-          			<p class="text-price">The Demand.Center platform is available in three main editions to suit companies of all sizes.  Contact us for further information and pricing.</p>
+          			<p class="text-d">Use Cases</p>
+          			<!--p class="text-price">The Demand.Center platform is available in three main editions to suit companies of all sizes.  Contact us for further information and pricing.</p-->
           		</div>
           	</div>
-
             <div class="row">
             	<!--Price 1-->
+              <div class="col-md-4 usecase">
+				  <img class="persona" src="images/dc-programs-team.jpg">				  
+				  <p class="challenges text-center">Programs Team</p>  
+				  <p class="text-b marg">How can I deliver the strategy and assets to the marketing team and improve time to market?</p> 
+				  <p class="text-price">Demand.Center has the concept of playbooks which can be created to deliver packaged campaigns assets, images and copy. These playbooks can be used to drive consistent and on brand messaging in line with the strategic objectives for the company.</p> </div>
+              <div class="col-md-4 usecase">
+				  <img class="persona" src="images/dc-production-role.jpg">			  
+				  <p class="challenges text-center">Global Demand Center Team</p>     
+				  <p class="text-b marg">How can I ensure campaigns are executed in MAP in line with best practice without compromising on the speed of execution?</p>  
+				  <p class="text-price">Setup templated best practice campaign workflows and assets using Demand.Center's playbooks. Measure how marketing teams adopt and adapt these playbooks.</p>
+			  </div>			
+              <div class="col-md-4 usecase">
+				  <img class="persona" src="images/dc-marketing-operations.jpg">
+				  <p class="challenges text-center">Marketing Operations</p> 
+				  <p class="text-b marg">How can I ensure Marketing Automation is leveraged to the fullest while applying governance and reducing maintenance?</p>
+				  <p class="text-price">Demand.Center integrates directly with the leading Marketing Automation and CRM systems which means everything you need to create in those systems for your campaigns will be created in your predefined structure with the click of a button.</p>  </div>		
+          	</div>			  
+          </div>
+		</section>  
+		<!--a name="editions"></a>
+        <section class="text-center green">
+          <div class="container">
+          	<div class="price row">
+          		<div class="pricing text-center pricing-text">
+          			<p class="text-d">Editions</p>
+          			<p class="text-price">The Demand.Center platform is available in three main editions to suit companies of all sizes.  Contact us for further information and pricing.</p>
+					<a class="btn btn-primary btn-lg text-uppercase button-d" href="request-a-demo.html" role="button">Arrange Demo</a>	
+          		</div>
+          	</div-->
+
+            <!--div class="row">
+      
               <div class="col-md-4">	
           		<div class="price-opt marg">Basic</div>					  
               	<div class="border-price">
@@ -291,7 +319,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					<a class="btn btn-primary btn-lg text-uppercase button-d" href="request-a-demo.html" role="button">Arrange Demo</a>				
               	</div>
               </div>
-			  <!--Price 2-->
               <div class="col-md-4">
           		<div class="price-opt marg">Standard</div>				  
               	<div class="border-price">				
@@ -315,7 +342,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					<a class="btn btn-primary btn-lg text-uppercase button-d" href="request-a-demo.html" role="button">Arrange Demo</a>				
               	</div>	
               </div>
-			  <!--Price 3-->
               <div class="col-md-4">
           		<div class="price-opt marg">Premium</div>				  
               	<div class="border-price">			
@@ -357,7 +383,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					<p><strong>Data Loader</strong></p>
 					<p>Validates data prior to loading into Marketing Automation platform to ensure data integrity and compliance.</p>	
 				</div>					
-            </div>	
+            </div-->	
           </div>
 		  
 		  
@@ -369,44 +395,35 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div class="margintopbot">
               <p class="text-c">Integrate with your Tech stack</p>
               <p class="text-integration">Demand.Center integrates with leading CRM, Marketing Automation, Cloud Storage and Colloboration Platforms</p>
-              <div class="row logo-smart">
-              
+                
+               
+              <div class="row  logo-smart ">
+                  <div class="col-md-2"></div>
                 <div class="col-md-3">
                    <img class="img-responsive" src="images/Marketo-AC-AllWhite.svg" width="200">
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-3">
                    <img class="img-responsive" src="images/omc-white-logo.png" width="150">
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-3">
                    <img class="img-responsive" src="images/Salesforce.png" width="150">
                 </div>
-                <div class="col-md-2">
-                  <img class="img-responsive" src="images/Slack_Monochrome_White.svg" width="150">
-                </div>
-                <div class="col-md-2">
-                  <img class="img-responsive" src="images/onedrive-logo-white.png" width="150">
-                </div>
+                <div class="col-md-2"></div>
               
               </div>
 				
-				<div class="row logo-smart">
-                 <div class="col-md-3">
-                  <img class="img-responsive" src="images/box_white.png" width="150">
-                </div>             
-                <div class="col-md-3">
-                   <img class="img-responsive" src="images/dropboxlogo-wht.png" width="200">
-                </div>
-                <div class="col-md-2">
-                   <img class="img-responsive no-spacing" src="images/Google_Drive_logo.png" title="Google Drive" width="110">
-                </div>
-                <div class="col-md-3">
-                   <img class="img-responsive no-spacing" src="images/sharepoint-1024x409.png" width="250">
-                </div>
-
-              
-              </div>
-              
-             
+                     <div class="row slickSlide responsive" style="max-height: 100px;">
+                        <div class="col-md-4 col-lg-3"><img class="img-responsive no-spacing" src="images/Slack_Monochrome_White.svg" style="width:210px; padding-top:3px;" title="Slack" width="150"></div>
+                        <div class="col-md-4 col-lg-3"><img class="img-responsive no-spacing" src="images/onedrive-logo-white.png" style="width:210px; padding-top:23px;" title="onedrive" width="150"></div>
+                        <div class="col-md-4 col-lg-3"><img class="img-responsive no-spacing" src="images/box_white.png" style="width:130px;" title="box" width="190"></div>
+                        <div class="col-md-4 col-lg-3"><img class="img-responsive no-spacing" src="images/dropboxlogo-wht.png" style="width:210px; padding-top:20px;" width="200"></div>
+                        <div class="col-md-4 col-lg-3"><img class="img-responsive no-spacing" src="images/Google_Drive_logo.png" style="width:100px;" title="Google Drive" width="110"></div>
+                        <div class="col-md-4 col-lg-3"><img class="img-responsive no-spacing" src="images/sharepoint-1024x409.png" style="width:230px;" title="SharePoint" width="250"></div>
+                        <div class="col-md-4 col-lg-3"><img class="img-responsive no-spacing" src="images/domo_logo_white.png" style="width:100px;" title="DOMO" width="250"></div>
+                        <div class="col-md-4 col-lg-3"><img class="img-responsive no-spacing" src="images/tableau-lg.png" style="width:150px;" title="Tableau" width="250"></div>
+                        <div class="col-md-4 col-lg-3"><img class="img-responsive no-spacing" src="images/SimpleHero_sideimage_400x225_PowerBI.png" style="width:150px;" title="PowerBI" width="250"></div>
+                    </div>
+               
              
              
               
@@ -414,33 +431,72 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </div>
         </section>
         <!-- Section Smart Integrations -->
+		
         <!-- Section Quote -->
         <section class="margintopbot">
-          <div class="container">
-            
-            <div class="media media-quote">
-              
-              <div class="media-body quote">
-                <h4 class="media-heading quote-text">"This platform is a complete game changer as a compliment to marketing automation tools like Oracle Marketing Cloud and Marketo!"</h4>
-              </div>
-            </div>
-            <p class="ready text-center"> — Marketing Automation Manager, Sage</p>
-          </div>
+                <div class="container">
+                    <div class="row">
+                    <div class="col-md-6 media" style="margin: auto;">
+                        <div class="media-body quote">
+                            <h4 class="media-heading quote-text">"Demand.Center has enabled us to scale marketing across our programmes, field and channel functions — and get the best of the resource mix within our team."</h4>
+                        </div>
+                        <p class="ready text-center">— Senior Marketing Director EMEA, Aruba</p>
+                    </div>
+                    <div class="col-md-6 media" style="margin: auto;">
+                        <div class="media-body quote">
+                            <h4 class="media-heading quote-text">"This platform is a complete game changer as a compliment to marketing automation tools like Oracle Marketing Cloud and Marketo!" <br></h4>
+                        </div>
+                        <p class="ready text-center">— Marketing Automation Manager, Sage</p>
+                    </div>
+                </div>
+            </div>           
         </section>
         <!-- Section Quote -->
 
+        <!-- Section Customers -->
+        <section class="blue text-center">
+			<div class="container">
+              <div class="row" style="margin:40px auto;">
+                <div class="col-md-3 col-md-push-1">
+                  <img class="img-responsive" src="images/Aruba-logo-wht.png" width="150">
+                </div>
+		<!--div class="col-md-3">
+                  <img class="img-responsive" src="images/equinix.gif" width="150">
+                </div-->  
+                <div class="col-md-3 col-md-push-1">
+                   <img class="img-responsive" src="images/Bb_Signature_RevMed_tcm223-65543.png" width="250">
+                </div>
+                <div class="col-md-3 col-md-push-1">
+                   <img class="img-responsive" src="images/mcafee-logo.png" width="225">
+                </div>
+              
+              </div>
+			</div>  
+        </section>
+        <!-- Section Customers -->
+
 
         <!-- Section Video -->
-        <section class="scrollme green">
-          <div class=" animateme" data-when="enter" data-from="0.95" data-to="0" data-opacity="0" data-translatex="400">
-              <div class="text-center" style="font-size: 50px; padding-bottom: 30px; padding-top: 50px; font-weight: 300"><a class="dark" href="contact-us.html" style="text-decoration: none"><i class="fas fa-phone"></i><p>Contact Us</p></a></div>
+		<a name="editions"></a>
+        <section class="scrollme">
+          <div class="container" data-when="enter" data-from="0.95" data-to="0" data-opacity="0" data-translatex="400">
+              <div class="text-center" style="padding-bottom: 50px; padding-top: 50px;">
+			  		<a class="dark" href="contact-us.html" style="text-decoration: none; font-size: 50px; color: rgb(99, 0, 255);"><i class="fas fa-phone"></i></a>
+			        <!--p class="text-d">Editions</p-->
+          			<p class="quote-text">The Demand.Center platform is available in three main editions to suit companies of all sizes.  Contact us for further information and pricing.</p>
+					<a class="btn btn-primary btn-lg text-uppercase button-d button-t" href="contact-us.html" role="button">Contact Us</a>	
+					<a class="btn btn-primary btn-lg text-uppercase button-d" href="pricing.html" role="button">Explore Editions</a>	
+					<a class="btn btn-primary btn-lg text-uppercase button-d button-t" href="request-a-demo.html" role="button">Request a Demo</a>						
+              </div>					
           </div>
         </section>
         <!-- Section Video -->
+		
+
         <!-- Section Pricing -->
 		
-			<a name="resources"></a>			
-		<section class="margintopbot">
+			<!--a name="resources"></a>			
+		<section class="margintopbot green">
 			<div class="container text-center">
 				<div class="row"> 			<div class="lb-inpage-container" data-qa-hook="qa-website-inject"><style>
               .lb-inpage-items {
@@ -459,14 +515,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               }
             </style><h3 class="lb-inpage-title" data-qa-hook="qa-website-inject-title">Resources</h3><div class="lb-inpage-items" data-qa-hook="qa-website-inject-items">
 			<a href="http://crmtechnologies.lookbookhq.com/c/webinar-DC?x=tv8vkh&lb_referrer=https://www.demand.center/" style="text-decoration: none;" class="lb-inpage-item lb-inpage-item-0 lb-inpage-item-first" target="_blank"><img class="lb-inpage-item-image" src="https://img.en25.com/EloquaImages/clients/CRMTechnologies/%7B36a0e54c-a5b6-4e73-9959-301ce9a3a3bd%7D_1024_1540996994-1.png" data-qa-hook="qa-website-inject-item-image"><div class="lb-inpage-item-text" data-qa-hook="qa-website-inject-item-title">Webinar: Driving consistent, repeatable and scalable Demand Marketing, globally</div></a>
-			<a href="http://crmtechnologies.lookbookhq.com/c/fivekeyconsideration?x=tv8vkh&amp;lb_referrer=https://www.demand.center/" style="text-decoration: none;" class="lb-inpage-item lb-inpage-item-1" target="_blank"><img class="lb-inpage-item-image" src="https://app.cdn.lookbookhq.com/lbhq-development/10354/content_thumbnails/27343/288x216/1024_1540996994-1.png" data-qa-hook="qa-website-inject-item-image"><div class="lb-inpage-item-text" data-qa-hook="qa-website-inject-item-title">Are You Thinking About a Demand Center?</div></a>
-			<a href="http://crmtechnologies.lookbookhq.com/c/why-demand-centers?x=tv8vkh&amp;lb_referrer=https://www.demand.center/" style="text-decoration: none;" class="lb-inpage-item lb-inpage-item-2" target="_blank"><img class="lb-inpage-item-image" src="https://app.cdn.lookbookhq.com/lbhq-development/10354/content_thumbnails/7271/288x216/1024-01.png" data-qa-hook="qa-website-inject-item-image"><div class="lb-inpage-item-text" data-qa-hook="qa-website-inject-item-title">The Business Case For A Demand Center</div></a>
-			<a href="http://crmtechnologies.lookbookhq.com/c/developing-a-demand-center?x=tv8vkh&amp;lb_referrer=https://www.demand.center/" style="text-decoration: none;" class="lb-inpage-item lb-inpage-item-4 lb-inpage-item-last" target="_blank"><img class="lb-inpage-item-image" src="https://app.cdn.lookbookhq.com/lbhq-development/10354/content_thumbnails/10923/288x216/1024_1524839255-01.png" data-qa-hook="qa-website-inject-item-image"><div class="lb-inpage-item-text" data-qa-hook="qa-website-inject-item-title">Considerations &amp; Benefits of Developing A Demand Center</div></a>
-			<!--a href="http://crmtechnologies.lookbookhq.com/c/welcome-to-crmt-s-de?x=tv8vkh&amp;lb_referrer=https://www.demand.center/" style="text-decoration: none;" class="lb-inpage-item lb-inpage-item-3" target="_blank"><img class="lb-inpage-item-image" src="https://img.youtube.com/vi/eTbrCdznPJc/0.jpg" data-qa-hook="qa-website-inject-item-image"><div class="lb-inpage-item-text" data-qa-hook="qa-website-inject-item-title">Welcome to CRMT's Demand.Center </div></a--></div></div></div>
-            </div>
+			<a href="http://crmtechnologies.lookbookhq.com/c/fivekeyconsideration?x=tv8vkh&amp;lb_referrer=https://www.demand.center/" style="text-decoration: none;" class="lb-inpage-item lb-inpage-item-1" target="_blank"><img class="lb-inpage-item-image" src="images/5-key.png"><div class="lb-inpage-item-text" data-qa-hook="qa-website-inject-item-title">Are You Thinking About a Demand Center?</div></a>
+			<a href="http://crmtechnologies.lookbookhq.com/c/why-demand-centers?x=tv8vkh&amp;lb_referrer=https://www.demand.center/" style="text-decoration: none;" class="lb-inpage-item lb-inpage-item-2" target="_blank"><img class="lb-inpage-item-image" src="images/bus-case.png"><div class="lb-inpage-item-text" data-qa-hook="qa-website-inject-item-title">The Business Case For A Demand Center</div></a>
+			<a href="http://crmtechnologies.lookbookhq.com/c/developing-a-demand-center?x=tv8vkh&amp;lb_referrer=https://www.demand.center/" style="text-decoration: none;" class="lb-inpage-item lb-inpage-item-4" target="_blank"><img class="lb-inpage-item-image" src="images/dev-DC.png"><div class="lb-inpage-item-text" data-qa-hook="qa-website-inject-item-title">Considerations &amp; Benefits of Developing A Demand Center</div></a>
+			<a href="http://crmtechnologies.lookbookhq.com/c/crmt-case-study-fina?x=tv8vkh" style="text-decoration: none;" class="lb-inpage-item lb-inpage-item-3 lb-inpage-item-last" target="_blank"><img class="lb-inpage-item-image" src="images/CASESTUDY.png" data-qa-hook="qa-website-inject-item-image"><div class="lb-inpage-item-text" data-qa-hook="qa-website-inject-item-title">Demand.Center enables Aruba to accelerate marketing across EMEA </div></a></div></div></div>
+            
           </div>
-        </section>		  
+        </section-->	
+
+		
         <!-- Footer -->
+		
         <section class="footer">
           <div class="container text-center ">
             <div class="row">
@@ -490,31 +549,121 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </div>
           </div>
         </section>
-        <!-- Footer -->
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        <script src="/js/shared.js"></script>
-        <script src="/js/cookies.js"></script>	
-        <script type="text/javascript">
-        $(document).ready(function(){				
+<!-- Footer -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="/js/shared.js"></script>
+<script src="/js/cookies.js"></script>	
+<script type="text/javascript">
+	$(document).ready(function(){				
 		if($(window).width() < 768){
 			$(".navbar-nav li a").click(function(){
-				$("#navbar").removeClass("collapse in");
+				$("#navbar").removeClass("collapse in");					
 			});
-			$(".features-container .pad-mob-feat a").click(function(){
+			$(".features-container .pad-mob-feat a").click(function(){				
 				var panel = $(".tab-content").find('.active');
 				$('html,body').animate({
 					scrollTop: $(panel).offset().top -110
-				}, 500);
-			});
-		}
-        });
-        </script>
+				}, 500);	
+			});					
+		}				
+	});
+</script>	
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MQ3TH57"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->  		
+<!-- End Google Tag Manager (noscript) -->  
+ 
+<!-- Start of Async Drift Code -->
+<script>
+"use strict";
+
+!function() {
+  var t = window.driftt = window.drift = window.driftt || [];
+  if (!t.init) {
+    if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+    t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+    t.factory = function(e) {
+      return function() {
+        var n = Array.prototype.slice.call(arguments);
+        return n.unshift(e), t.push(n), t;
+      };
+    }, t.methods.forEach(function(e) {
+      t[e] = t.factory(e);
+    }), t.load = function(t) {
+      var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+      o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+      var i = document.getElementsByTagName("script")[0];
+      i.parentNode.insertBefore(o, i);
+    };
+  }
+}();
+drift.SNIPPET_VERSION = '0.3.1';
+drift.load('9uc2i95wf7k2');
+</script>
+<!-- End of Async Drift Code -->
+      
+  <!-- SLICK -->    
+      <script type="text/javascript" src="js/slick.min.js"></script>
+      <script>
+            $(document).ready(function(){
+              $('.slickSlide').slick({
+                  dots: true,
+                  arrows: false,
+                  autoplay: true,
+                  autoplaySpeed: 1000,
+                    slidesToShow: 4,
+                  variableWidth: false,
+                   responsive: [
+                        {
+                          breakpoint: 1024,
+                          settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 2,
+                            infinite: true,
+                          }
+                        },
+                        {
+                          breakpoint: 600,
+                          settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                          }
+                        },
+                        {
+                          breakpoint: 480,
+                          settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                          }
+                        }
+                     ]
+              });
+              $('.slider-for').slick({
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    fade: true,
+					autoplay: true,
+                    autoplaySpeed: 3000,
+                    //asNavFor: '.slider-nav',           
+                });
+				$('.slider-for').on('afterChange', function(event, slick, currentSlide, nextSlide){
+					var newSlide = $('.slider-for .slick-active .tab-pane').attr('id');
+					$(".pad-mob-feat a").removeClass('active');		
+					$(".pad-mob-feat a[href='#" + newSlide + "']").addClass('active');
+				});	
+
+				$(".pad-mob-feat a").click(function(e){
+					e.preventDefault();
+					slideIndex = $(this).parent().index();
+					$( '.slider-for' ).slick("slickGoTo", parseInt(slideIndex) );
+				});				           
+            });
+      
+      </script>
+  <!-- SLICK -->  
       </body>
     </html>
