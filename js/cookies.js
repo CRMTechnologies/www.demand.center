@@ -258,8 +258,15 @@ $(document).ready( function() {
 	}
 });
 
+$(document).bind("user_cookie_already_accepted", function(event, object) {
+  dataLayer.push({'event': 'accepted-cookies'});
+});
+
 $(document).bind("user_cookie_consent_changed", function(event, object) {
-	console.log("User cookie consent changed: " + $(object).attr('consent') );
+  const userConsentGiven = $(object).attr('consent');
+  if (userConsentGiven) {
+    dataLayer.push({'event': 'accepted-cookies'});
+  }
 });
 
 }(jQuery));
