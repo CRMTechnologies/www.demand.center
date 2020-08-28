@@ -6,7 +6,6 @@ exports.handler = function (event, context, callback) {
 	var post_data = querystring.stringify(
 		body.data
 	);
- 	console.log( post_data );
   // An object of options to indicate where to post to
   var post_options = {
       host: 's1010.t.eloqua.com',
