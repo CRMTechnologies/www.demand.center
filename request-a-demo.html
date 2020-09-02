@@ -76,10 +76,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
              <div class="row">
               <div class="col-md-12 form">		  
 <div>
-  <form method="post" name="dcDemo" action="https://s1010.t.eloqua.com/e/f2" onsubmit="return handleFormSubmit(this)" id="form106" class="elq-form" >
+  <form method="post" name="dcDemo" action="/request-a-demo-ty" onsubmit="return handleFormSubmit(this)" id="form106" class="elq-form" netlify >
     <input value="dcDemo" type="hidden" name="elqFormName"  />
     <input value="1010" type="hidden" name="elqSiteId"  />
     <input name="elqCampaignId" type="hidden"  />
+    <input type="hidden" name="elqCustomerGUID" value="">
+    <input type="hidden" name="elqCookieWrite" value="0">		  
     <div id="formElement1" class="sc-view form-design-field sc-static-layout item-padding sc-regular-size" >
       <div class="field-wrapper" >
       </div>
@@ -1212,6 +1214,26 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       }
     }
   </script>
+<script type='text/javascript'>
+var elqTimerId = null, timeout = 5;
+
+function WaitUntilCustomerGUIDIsRetrieved() {
+	if (!!(elqTimerId)) {
+		if (timeout == 0) {
+			return;
+		}
+		if (typeof this.GetElqCustomerGUID === 'function') {
+			document.forms["dcDemo"].elements["elqCustomerGUID"].value = GetElqCustomerGUID();
+			return;
+		}
+		timeout -= 1;
+	}
+	elqTimerId = setTimeout("WaitUntilCustomerGUIDIsRetrieved()", 500);
+	return;
+}
+window.onload = WaitUntilCustomerGUIDIsRetrieved;
+_elqQ.push(['elqGetCustomerGUID']);
+</script>		
 </div>
 					<div class="modal-privacy">
 					<p><small>We take data privacy very seriously and will not share your details.<br>
