@@ -16,7 +16,8 @@ fields:
   label: keywords
 - type: boolean
   name: isHome
-  label: isHome
+  label: Regular Page
+  description: Set to false, if page has a form
 - type: boolean
   name: carousel
   label: carousel
