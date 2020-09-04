@@ -1,0 +1,14 @@
+{{ define "main" }}
+	<section class=" pt-5 pb-50">
+		<div class="container">
+			<div class="row">
+                        {{ range (.Paginator 6).Pages.ByPublishDate.Reverse }}
+                              {{ .Render "li"}}
+                        {{ end }}
+			</div>                        
+			<div class="row justify-content-center">                        
+                        {{ template "_internal/pagination.html" . }}
+			</div>
+		</div>		
+	</section>		
+{{ end }} 

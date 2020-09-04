@@ -1,0 +1,12 @@
+             <div class="col-sm-6 col-lg-4 mb-5">	
+                <div class="card card-resource">
+                   {{ if ne .Type "tags" }}<div class="card-header bg-light text-center p-0">		
+                     <div class="tag {{ .Params.content_type | urlize }}">{{ .Params.content_type  | default "Article" }}</div>
+                     <a href="{{ .RelPermalink }}"><img src='{{ if (isset .Params "thumbnail" ) }}{{ .Params.thumbnail }}{{ else }}{{ .Params.image }}{{ end }}' alt="{{ .Title }}"></a>
+                  </div>{{ end }}   
+                  <div class="card-body bg-mid d-flex align-items-start flex-column mt-auto pt-3 pb-5 px-4 {{ if eq .Type "tags" }}pt-5{{ end }}">
+                    <h6 class="card-text">{{if .Params.card_title }}{{ .Params.card_title }}{{ else }}{{ .Title }}{{ end }}<span>{{ if eq .Type "tags" }}{{ .Description }}{{ else }}{{ .Params.card_subtitle }}{{ end }}</span></h6>
+                    <a href='{{if eq .Params.gated true }}{{ .RelPermalink }}{{ else if eq .Type "resource" }}{{ .Params.asset_link }}{{ else }}{{ .RelPermalink }}{{ end }}' class="btn btn-split mt-auto green-btn py-2 px-4">{{ .Params.cta | default "Read more" }}</a>
+                  </div>     
+                </div>
+              </div>
