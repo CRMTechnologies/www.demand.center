@@ -1,0 +1,140 @@
+        <!-- Section Pricing -->	  
+        <!-- Footer -->
+        <section class="footer">
+          <div class="container text-center ">
+            <div class="row">
+              <div class="col-md-6 text-left">
+<span class="crmtlink"><span class="crmtlink">Copyright © 2020 CRM Technologies Ltd</span class="crmtlink"> |  <a title="Legal stuff" href="https://www.crmtdigital.com/content/terms-conditions" class="crmtlink">Legal</a> | <a title="Privacy policy" href="https://www.crmtdigital.com/content/privacy-policy" class="crmtlink">Privacy Policy</a></span>		  
+</div>			  
+              <!--div class="col-md-6 align-middle">
+                <ul class="nav nav-pills link-socials text-center">
+                  <li>
+                    <a href="#"><i class="fab fa-twitter fa-lg"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-linkedin fa-lg"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-facebook fa-lg"></i></a>
+                  </li>
+                </ul>
+              </div-->
+              <div class="col-md-6 text-right"><a href="https://www.crmtdigital.com/" class="crmtlink">www.crmtdigital.com</a></div>
+            </div>
+          </div>
+        </section>
+        <!-- Footer -->
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="/js/shared.js"></script>
+        <script src="/js/cookies.js"></script>
+         {{ if not .Params.isHome }}<script src="/js/form.js"></script>{{ else }}	 		
+		<script type="text/javascript">
+			$(document).ready(function(){				
+				if($(window).width() < 768){
+					$(".navbar-nav li a").click(function(){
+						$("#navbar").removeClass("collapse in");					
+					});
+					$(".features-container .pad-mob-feat a").click(function(){				
+						var panel = $(".tab-content").find('.active');
+						$('html,body').animate({
+							scrollTop: $(panel).offset().top -110
+						}, 500);	
+					});					
+				}				
+			});
+		</script>
+		<!-- Start of Async Drift Code -->
+		<script>
+		"use strict";
+
+		!function() {
+		  var t = window.driftt = window.drift = window.driftt || [];
+		  if (!t.init) {
+			if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+			t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+			t.factory = function(e) {
+			  return function() {
+				var n = Array.prototype.slice.call(arguments);
+				return n.unshift(e), t.push(n), t;
+			  };
+			}, t.methods.forEach(function(e) {
+			  t[e] = t.factory(e);
+			}), t.load = function(t) {
+			  var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+			  o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+			  var i = document.getElementsByTagName("script")[0];
+			  i.parentNode.insertBefore(o, i);
+			};
+		  }
+		}();
+		drift.SNIPPET_VERSION = '0.3.1';
+		drift.load('9uc2i95wf7k2');
+		</script>
+		<!-- End of Async Drift Code -->				
+		{{ end }}	
+		
+    {{ if .Params.carousel }}		
+  <!-- SLICK -->    
+      <script type="text/javascript" src="js/slick.min.js"></script>
+      <script>
+            $(document).ready(function(){
+              $('.slickSlide').slick({
+                  dots: true,
+                  arrows: false,
+                  autoplay: true,
+                  autoplaySpeed: 1000,
+                    slidesToShow: 4,
+                  variableWidth: false,
+                   responsive: [
+                        {
+                          breakpoint: 1024,
+                          settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 2,
+                            infinite: true,
+                          }
+                        },
+                        {
+                          breakpoint: 600,
+                          settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                          }
+                        },
+                        {
+                          breakpoint: 480,
+                          settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                          }
+                        }
+                     ]
+              });
+              $('.slider-for').slick({
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    fade: true,
+					autoplay: true,
+                    autoplaySpeed: 3000,
+                    //asNavFor: '.slider-nav',           
+                });
+				$('.slider-for').on('afterChange', function(event, slick, currentSlide, nextSlide){
+					var newSlide = $('.slider-for .slick-active .tab-pane').attr('id');
+					$(".pad-mob-feat a").removeClass('active');		
+					$(".pad-mob-feat a[href='#" + newSlide + "']").addClass('active');
+				});	
+
+				$(".pad-mob-feat a").click(function(e){
+					e.preventDefault();
+					slideIndex = $(this).parent().index();
+					$( '.slider-for' ).slick("slickGoTo", parseInt(slideIndex) );
+				});				           
+            });
+      
+      </script>
+  <!-- SLICK --> 
+	{{ end }}  

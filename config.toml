@@ -1,0 +1,15 @@
+baseurl = "https://www.demand.center/"
+languageCode = "en-gb"
+title = "Demand Center"
+description = "Intelligent Global Marketing Campaign Orchestration"
+preserveTaxonomyNames = true
+disableKinds = "taxonomyTerm"
+[permalinks]
+  post = "/:title/"
+  who-we-work-with = "/customers/:slug"
+[taxonomies]
+  tag = "tags"
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

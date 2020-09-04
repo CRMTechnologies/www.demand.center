@@ -1,0 +1,23 @@
+---
+label: Meta
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: textarea
+  name: description
+  label: description
+- type: file
+  name: image
+  label: image
+- type: list
+  name: keywords
+  label: keywords
+- type: boolean
+  name: isHome
+  label: Regular Page
+  description: Set to false, if page has a form
+- type: boolean
+  name: carousel
+  label: carousel
