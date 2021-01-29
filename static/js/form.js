@@ -126,7 +126,6 @@ var progPro = (function () {
 	var setHiddenFields = function() {
 		var query = window.location.search.substring(1); 
 		var vars = query.split("&"); 
-      console
       if(document.location.search.length) {
 		for (var i=0;i < vars.length;i++) { 
 			var pair = vars[i].split("="); 
