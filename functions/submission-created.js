@@ -61,12 +61,12 @@ var post_data2 = {
       "communications": [ 
         {
           "value": genComms,
-          "subscriptionTypeId": 10994927,
+          "subscriptionTypeId": 11618778,
           "text": "Subscribe to Email Communications: Email content round-ups, hints and tips to help you improve marketing effectiveness"
         },
         {
           "value": eventComms,
-          "subscriptionTypeId": 11618778,
+          "subscriptionTypeId": 11619957,
           "text": "Subscribe to Events and Webinars: Adhoc email notifications about upcoming events and webinars"
         }		
       ]
