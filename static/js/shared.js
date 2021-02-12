@@ -42,5 +42,7 @@ function setHiddenFormFields() {
 			document.getElementsByName(hiddenFields[i].name)[0].value = param;
 		}
 	}
-	document.getElementById('htuk').value = document.cookie.replace(/(?:(?:^|.*;\s*)hubspotutk\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+	if( $('#htuk').length > 0 ) {
+		document.getElementById('htuk').value = document.cookie.replace(/(?:(?:^|.*;\s*)hubspotutk\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+	}
 }
