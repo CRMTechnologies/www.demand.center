@@ -24,14 +24,16 @@ $(document).ready(function(){
 	  $(event.target).addClass('active');
 	});
 	if(document.location.search.length > 4) {
+		var query = window.location.search.substring(1); 
+		var vars = query.split("&"); 
 		for (var i=0;i < vars.length;i++) { 
 			var pair = vars[i].split("="); 
 			if( (pair[0].substring(0, 4) == "utm_") && (pair[1] != "")) {
 				var xVal = pair[1].replace(/\+/g, '%20');
-				$("[name='" + pair[0] + "']").val( decodeURIComponent( xVal ) );
+				sessionStorage.setItem( pair[0], decodeURIComponent( xVal ) );
 			}            
 		} 
-	}  			
+	}			
 });
 
 function setHiddenFormFields() {
