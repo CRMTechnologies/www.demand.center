@@ -100,9 +100,9 @@ console.log(post_data2);
       res.on('error', function (e) {
 		callback(null, {
 			statusCode: 400,
-			body:  "Failed " + e.message 
+			body:  "Failed " + e.stack 
 		});
-		console.log( "Failed " + e.message );
+		console.log( "Failed " + e.stack );
       });
 
   });
