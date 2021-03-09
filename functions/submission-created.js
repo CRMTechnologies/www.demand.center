@@ -93,16 +93,16 @@ console.log(post_data2);
       res.on('data', function (chunk) {
 		callback(null, {
 			statusCode: 200,
-			body:  "Done" 
+			body:  "Done"
 		});
-		console.log( "Done" );	      
+		console.log( "200: " + chunk );	      
       });
       res.on('error', function (e) {
 		callback(null, {
 			statusCode: 400,
-			body:  "Failed " + e.stack 
+			body:  "Failed" 
 		});
-		console.log( "Failed " + e.stack );
+		console.log( "Failed " + e );
       });
 
   });
@@ -131,8 +131,7 @@ console.log(post_data2);
 		callback(null, {
 			statusCode: 200,
 			body:  "Done" 
-		});
-		console.log(chunk.errors);		
+		});		
 		console.log( "Done" );	      
       });
       res.on('error', function (e) {
