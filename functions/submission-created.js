@@ -49,10 +49,9 @@ var post_data2 = {
     }
   ],
   "context": {
-    "hutk": body.data.hutk, 
     "pageUri": body.data.referrer,
     "pageName": body.data.asset,
-	"ipAddress": body.data.ip
+    "ipAddress": body.data.ip
   },
   "legalConsentOptions": {
     "consent": { 
@@ -74,6 +73,10 @@ var post_data2 = {
   }
 }  
 
+if (body.data.hutk != "") {
+	post_data2.context.hutk = body.data.hutk;
+}
+	
 console.log(post_data2);
 
 	// An object of options to indicate where to post to
