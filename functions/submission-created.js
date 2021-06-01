@@ -49,10 +49,9 @@ var post_data2 = {
     }
   ],
   "context": {
-    "hutk": body.data.hutk, 
     "pageUri": body.data.referrer,
     "pageName": body.data.asset,
-	"ipAddress": body.data.ip
+    "ipAddress": body.data.ip
   },
   "legalConsentOptions": {
     "consent": { 
@@ -74,6 +73,10 @@ var post_data2 = {
   }
 }  
 
+if (body.data.hutk != "") {
+	post_data2.context.hutk = body.data.hutk;
+}
+	
 console.log(post_data2);
 
 	// An object of options to indicate where to post to
@@ -93,16 +96,16 @@ console.log(post_data2);
       res.on('data', function (chunk) {
 		callback(null, {
 			statusCode: 200,
-			body:  "Done" 
+			body:  "Done"
 		});
-		console.log( "Done" );	      
+		console.log( "200: " + chunk );	      
       });
       res.on('error', function (e) {
 		callback(null, {
 			statusCode: 400,
-			body:  "Failed " + e.message 
+			body:  "Failed" 
 		});
-		console.log( "Failed " + e.message );
+		console.log( "Failed " + e );
       });
 
   });
@@ -131,8 +134,7 @@ console.log(post_data2);
 		callback(null, {
 			statusCode: 200,
 			body:  "Done" 
-		});
-		console.log(chunk.errors);		
+		});		
 		console.log( "Done" );	      
       });
       res.on('error', function (e) {
