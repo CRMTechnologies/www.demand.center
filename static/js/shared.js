@@ -33,7 +33,7 @@ $(document).ready(function(){
 				sessionStorage.setItem( pair[0], decodeURIComponent( xVal ) );
 			}            
 		} 
-	} 			
+	}
 });
 
 function setHiddenFormFields() {
