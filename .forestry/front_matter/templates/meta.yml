@@ -21,3 +21,5 @@ fields:
 - type: boolean
   name: carousel
   label: carousel
+pages:
+- content/create-issue.html
