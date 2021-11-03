@@ -1,0 +1,182 @@
+html{
+    height: 100%;
+    font-family: Poppins;
+}
+
+body{
+    background: url("https://www.researchinformation.info/sites/default/files/content/feature/lead-image/shutterstock_1614142333.jpeg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;	
+}
+
+#logo{
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-left: 50px;	
+	padding-bottom: 10%;
+}
+
+#title{
+    text-align: left;
+    font-size: 2.5rem;
+    color: aliceblue;
+    padding-left: 50px;
+    font-weight: 100;
+	padding-bottom: 15%;
+	margin-block-end: 0;
+    margin-block-start: 0;
+}
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left:0;
+    padding-right: 70%;
+    margin:0 auto;
+    text-align:center;
+    flex-direction: column;
+    
+}
+
+#top-subcontainer{
+    padding: 0;
+    padding-top: 5vh;
+}
+
+#top-subcontainer,
+#bottom-subcontainer {
+    justify-content: center;
+    align-items: center;
+}
+
+#create-buttons{
+    padding:0;
+    margin:0 auto;
+}
+
+#feature,
+#bug,
+#task{
+    border: none;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    height: 60px;
+    width: 350px;
+    font-size: 15px;
+    color: aliceblue;
+    font-weight: 600;
+}
+
+button{
+	position: relative;
+	padding: 20px 50px;
+	text-decoration: none;
+	color: #fff;
+	font-size: 2em;
+	text-transform: uppercase;
+	font-family: Poppins;
+	letter-spacing: 4px;
+	overflow: hidden;
+	background: rgba(255,255,255,.1);
+	box-shadow: 0 5px 5px rgba(0,0,0.2);
+}
+
+button:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	background: rgba(255,255,255,.1);
+}
+
+button:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(90deg,transparent,rgba(255,255,255,.4),transparent);
+	transition: 0.5s;
+	transition-delay: 0.5s;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+button:hover:after{
+	left: 100%;
+}
+
+button span{
+	position: absolute;
+	display: block;
+	transition: 0.5s ease;
+}
+
+button span:nth-child(1)
+{
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 1px;
+	background: #fff;
+}
+
+button:hover span:nth-child(1)
+{
+	width: 100%;
+	transform: translateX(100%);
+}
+
+button span:nth-child(3)
+{
+	bottom: 0;
+	right: 0;
+	width: 0;
+	height: 1px;
+	background: #fff;
+}
+
+button:hover span:nth-child(3)
+{
+	width: 100%;
+	transform: translateX(-100%);
+}
+button span:nth-child(2)
+{
+	top: 0;
+	left: 0;
+	width: 1px;
+	height: 0;
+	background: #fff;
+}
+
+button:hover span:nth-child(2)
+{
+	height: 100%;
+	transform: translateY(100%);
+}
+
+button span:nth-child(4)
+{
+	bottom: 0;
+	right: 0;
+	width: 1px;
+	height: 0;
+	background: #fff;
+}
+
+button:hover span:nth-child(4)
+{
+	height: 100%;
+	transform: translateY(-100%);
+}
