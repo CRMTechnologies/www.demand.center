@@ -11,7 +11,7 @@
     background-size: cover;	
 }
 
-#logo{
+.main-container #logo{
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -20,7 +20,7 @@
 	padding-bottom: 10%;
 }
 
-#title{
+.main-container #title{
     text-align: left;
     font-size: 2.5rem;
     color: aliceblue;
@@ -43,25 +43,25 @@
     
 }
 
-#top-subcontainer{
+.main-container #top-subcontainer{
     padding: 0;
     padding-top: 5vh;
 }
 
-#top-subcontainer,
-#bottom-subcontainer {
+.main-container #top-subcontainer,
+.main-container #bottom-subcontainer {
     justify-content: center;
     align-items: center;
 }
 
-#create-buttons{
+.main-container #create-buttons{
     padding:0;
     margin:0 auto;
 }
 
-#feature,
-#bug,
-#task{
+.main-container #feature,
+.main-container #bug,
+.main-container #task{
     border: none;
     justify-content: space-between;
     margin-bottom: 50px;
@@ -72,7 +72,7 @@
     font-weight: 600;
 }
 
-button{
+.main-container button{
 	position: relative;
 	padding: 20px 50px;
 	text-decoration: none;
@@ -86,7 +86,7 @@ button{
 	box-shadow: 0 5px 5px rgba(0,0,0.2);
 }
 
-button:before{
+.main-container button:before{
 	content: '';
 	position: absolute;
 	top: 0;
@@ -96,7 +96,7 @@ button:before{
 	background: rgba(255,255,255,.1);
 }
 
-button:after{
+.main-container button:after{
 	content: '';
 	position: absolute;
 	top: 0;
@@ -108,21 +108,21 @@ button:after{
 	transition-delay: 0.5s;
 }
 
-button:hover{
+.main-container button:hover{
     cursor: pointer;
 }
 
-button:hover:after{
+.main-container button:hover:after{
 	left: 100%;
 }
 
-button span{
+.main-container button span{
 	position: absolute;
 	display: block;
 	transition: 0.5s ease;
 }
 
-button span:nth-child(1)
+.main-container button span:nth-child(1)
 {
 	top: 0;
 	left: 0;
@@ -131,13 +131,13 @@ button span:nth-child(1)
 	background: #fff;
 }
 
-button:hover span:nth-child(1)
+.main-container button:hover span:nth-child(1)
 {
 	width: 100%;
 	transform: translateX(100%);
 }
 
-button span:nth-child(3)
+.main-container button span:nth-child(3)
 {
 	bottom: 0;
 	right: 0;
@@ -146,12 +146,12 @@ button span:nth-child(3)
 	background: #fff;
 }
 
-button:hover span:nth-child(3)
+.main-container button:hover span:nth-child(3)
 {
 	width: 100%;
 	transform: translateX(-100%);
 }
-button span:nth-child(2)
+.main-container button span:nth-child(2)
 {
 	top: 0;
 	left: 0;
@@ -160,13 +160,13 @@ button span:nth-child(2)
 	background: #fff;
 }
 
-button:hover span:nth-child(2)
+.main-container button:hover span:nth-child(2)
 {
 	height: 100%;
 	transform: translateY(100%);
 }
 
-button span:nth-child(4)
+.main-container button span:nth-child(4)
 {
 	bottom: 0;
 	right: 0;
@@ -175,7 +175,7 @@ button span:nth-child(4)
 	background: #fff;
 }
 
-button:hover span:nth-child(4)
+.main-container button:hover span:nth-child(4)
 {
 	height: 100%;
 	transform: translateY(-100%);
