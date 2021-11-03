@@ -1,9 +1,9 @@
-html{
+.main-container{
     height: 100%;
     font-family: Poppins;
 }
 
-body{
+.wrapper{
     background: url("https://www.researchinformation.info/sites/default/files/content/feature/lead-image/shutterstock_1614142333.jpeg") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
