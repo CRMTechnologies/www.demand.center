@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Create issue | Demand Center</title>
+	<meta name="robots" content="noindex nofollow">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <script type="text/javascript" src="https://crmtechnologies.atlassian.net/s/d41d8cd98f00b204e9800998ecf8427e-T/-x8fh9u/b/3/06e9607e63881b2465acb87c82a44c6d/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-GB&collectorId=d9b3bd05"></script>
+    <script type="text/javascript" src="https://crmtechnologies.atlassian.net/s/d41d8cd98f00b204e9800998ecf8427e-T/-x8fh9u/b/3/06e9607e63881b2465acb87c82a44c6d/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-GB&collectorId=e1fb4eaa"></script>
+    <script type="text/javascript" src="https://crmtechnologies.atlassian.net/s/d41d8cd98f00b204e9800998ecf8427e-T/-x8fh9u/b/3/06e9607e63881b2465acb87c82a44c6d/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-GB&collectorId=fe074f1a"></script>
+
+    <script type="text/javascript">window.ATL_JQ_PAGE_PROPS = {
+
+            //=== Collector id for Feature === 
+            'fe074f1a' :{
+                "triggerFunction": function(showCollectorDialog) {
+                jQuery("#feature").click(function(e) {
+                    e.preventDefault();
+                    showCollectorDialog();
+                    });
+                }
+            },
+
+            //=== Collector id for Bug === 
+            'e1fb4eaa' :{  
+                "triggerFunction": function(showCollectorDialog) {
+                jQuery("#bug").click(function(e) {
+                    e.preventDefault();
+                    showCollectorDialog();
+                    });
+                }
+            },
+
+            //=== Collector id for Task === 
+            'd9b3bd05' :{
+                "triggerFunction": function(showCollectorDialog) {
+                jQuery("#task").click(function(e) {
+                    e.preventDefault();
+                    showCollectorDialog();
+                    }); 
+                }
+            }       
+        };
+        
+        </script>
+
+  </head>
+  <body>
+      <div class="main-container">
+            <div id="top-subcontainer">
+                <!-- img src uses local resource -->
+                <img src='../resources/crmt-digital-white.png'id="logo" width="400" height="80"></img>
+                <h1 id="title">Create a ticket</h1>              
+            </div>
+            <div id="bottom-subcontainer">
+                <ul id='create-buttons'>
+                    <button id="feature" href="#">Create a feature
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <br>
+                    <button id="bug" href="#">Create a bug
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <br>
+                    <button id="task" href="#">Create a task
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </ul>
+            </div>
+        </div>
+  </body>
+</html>
