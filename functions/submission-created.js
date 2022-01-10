@@ -36,7 +36,7 @@ var post_data2 = {
       "value": body.data.company
     },
     {
-      "name": "country",
+      "name": "eloqua_country",
       "value": body.data.country
     },
     {
