@@ -46,6 +46,18 @@ var post_data2 = {
     {
       "name": "message",
       "value": body.data.paragraphText
+    },
+    {
+      "name": "utm_campaign",
+      "value": body.data.utm_campaign
+    },
+    {
+      "name": "utm_medium",
+      "value": body.data.utm_medium
+    },
+    {
+      "name": "utm_source",
+      "value": body.data.utm_source	    
     }
   ],
   "context": {
